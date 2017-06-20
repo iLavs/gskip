@@ -3,10 +3,4 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="FLOW" />
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path>$PROJECT_DIR$/../react API/JS_homeTask_13_React/node_modules/flow-bin/flow-win64-v0.38.0/flow.exe</exe-path>
-    <annotation-enable>false</annotation-enable>
-    <other-services-enabled>true</other-services-enabled>
-  </component>
 </project>
