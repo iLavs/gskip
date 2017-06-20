@@ -1,52 +1,8 @@
-/*------------------------------RESET DEFAULT STYLES--------------------------------*/
-/*----------------------------------------------------------------------------------*/
-html,body                       { width:100%; height:100%;}
-body                            { padding:0; margin:0; font:14px arial; line-height: 1.5; background: #fff;}
-div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea,header, nav, section, article, aside, footer, blockquote {
-	padding:0;
-	margin:0;
-	outline:none;
-	list-style:none;
+/*--------------------------------------WRAP----------------------------------------*/
 
-	box-sizing: border-box;
- 	-moz-box-sizing: border-box;
-}
-header, nav, section, article, aside, footer {
-	display: block
-}
-select, input, textarea        {  font:italic 16px arial; color: #e5e5e5; vertical-align:middle; }
-textarea                       { vertical-align:top; resize:none;}
-:focus                         { outline:none; }
-input[type=submit], button     { cursor:pointer; }
-img, fieldset                  { border:0; }
-table                          { border-collapse:collapse; border-spacing:0; }
-a                              { font: 12px arial; color: #58595b; text-decoration:none; }
-a:hover                        { text-decoration:none; }
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------DEFAULT CLASSES------------------------------*/
-/*----------------------------------------------------------------------------------*/
-.float-r           	           { float:right !important; }
-.float-l                       { float:left !important; }
-.no-float                      { float:none !important; }
-.no-border                     { border:0 !important; }
-.no-bg                         { background:none !important; }
-.no-margin                     { margin:0 !important; }
-.no-padding                    { padding:0 !important; }
-.no-display                    { display:none !important; }
-.display                       { display:block !important; }
-.inline                        { display:inline !important; }
-.overflow                      { overflow:hidden !important; }
-.align-r                       { text-align:right !important; }
-.align-l                       { text-align:left !important; }
-.align-c                       { text-align:center !important; }
-.clear                         { clear:both; }
-.middle                        { position: relative; top:50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
- 
- 
-/*----------------------------------------WRAP--------------------------------------*/
- 
+
 /*-------------------------------------HEADER---------------------------------------*/
- 
+
 /*-------------------------------------CONTENT--------------------------------------*/
  
 
