@@ -7,6 +7,7 @@
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
 
     <!--styles-->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -19,23 +20,29 @@
 <div class="wrap">
     <header class="header fixed" id="stickyHeader">
         <div class="container-fluid d-flex align-items-center justify-content-between">
+            <button class="burger-btn btn btn-secondary" id="burgerBtn" type="button">
+                <i class="icon icon-burger"></i>
+            </button>
+
             <a class="logo" href="/">
                 <img class="logo-img" src="img/logo_with_title.png">
             </a>
 
-            <nav class="main-nav-list">
+            <nav class="main-nav" id="mainNav">
+                <button class="btn close-btn" type="button" id="closeNav">&times;</button>
+
                 <ul class="main-nav-list">
                     <li class="main-nav-item">
-                        <a class="header-nav-link" href="#">How it works</a>
+                        <a class="header-nav-link" href="https://v4-alpha.getbootstrap.com">How it works</a>
                     </li>
                     <li class="main-nav-item">
-                        <a class="header-nav-link" href="#">Find Savings</a>
+                        <a class="header-nav-link" href="https://v4-alpha.getbootstrap.com">Find Savings</a>
                     </li>
                     <li class="main-nav-item">
-                        <a class="header-nav-link" href="#">Support</a>
+                        <a class="header-nav-link" href="https://v4-alpha.getbootstrap.com">Support</a>
                     </li>
                     <li class="main-nav-item">
-                        <a class="header-nav-link" href="#">Blog</a>
+                        <a class="header-nav-link" href="https://v4-alpha.getbootstrap.com">Blog</a>
                     </li>
                 </ul>
             </nav>
@@ -92,12 +99,14 @@
                             <div class="card-text">
                                 <h3 class="card-title title-sm">Lorem ipsum sit amet.</h3>
                                 <p class="">
-                                    Aperiam consectetur culpa pariatur perspiciatis, quasi unde.
+                                    Enim eveniet explicabo impedit
+                                    molestiae neque odio quod sapiente veritatis vero voluptatem! Atque ipsa nihil
+                                    perferendisut.
                                 </p>
                             </div>
 
                             <div class="icon-wrap">
-                                <img src="img/icons/icon-2.png" class="icon icon-2">
+                                <img src="img/icons/icon-1.png" class="icon icon-1">
                             </div>
                         </div>
 
@@ -115,7 +124,7 @@
                             </div>
 
                             <div class="icon-wrap">
-                                <img src="img/icons/icon-3.png" class="icon icon-3">
+                                <img src="img/icons/icon-1.png" class="icon icon-1">
                             </div>
                         </div>
                     </div>
@@ -126,32 +135,37 @@
         <section class="section panel-pane bg-grey">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="">Lorem ipsum dolor sit amet.</h3>
+                    <div class="col-lg-6">
+                        <div class="text-wrap">
+                            <h3 class="h3 panel-pane-heading">Lorem ipsum dolor sit amet.</h3>
 
-                        <p>
-                            Distinctio error maiores nostrum. Consectetur cum debitis dolores eaque eius error expedita
-                            explicabo incidunt ipsa iste laborum laudantium minima, nostrum omnis quae quia saepe sequi
-                            vel
-                            velit voluptas?
-                        </p>
+                            <p>
+                                Distinctio error maiores nostrum. Consectetur cum debitis dolores eaque eius error
+                                expedita
+                                explicabo incidunt ipsa iste laborum laudantium minima, nostrum omnis quae quia saepe
+                                sequi
+                                vel
+                                velit voluptas?
+                            </p>
 
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, rerum.</li>
-                            <li>Lorem ipsum dolor sit.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                        </ul>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, rerum.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                            </ul>
 
-                        <a href="#" class="text-primary">Sign up free</a>
-                    </div>
+                            <a href="#" class="btn btn-success">Sign up free</a>
+                        </div><!--/ text-wrap-->
+                    </div><!--/ col-->
 
-                    <div class="col-sm-6">
+                    <div class="col-lg-6 align-self-end">
                         <div class="img-wrap">
                             <img class="" src="img/bills_module.png" alt="">
                         </div>
-                    </div>
+                    </div><!--/ col-->
+
                 </div><!-- / row -->
             </div> <!-- / container -->
         </section><!-- / panel -->
@@ -159,38 +173,41 @@
         <section class="section panel-pane">
             <div class="container">
                 <div class="row flex-sm-row-reverse">
-                    <div class="col-sm-6">
-                        <h3 class="">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                    <div class="col-lg-6">
+                        <div class="text-wrap">
+                            <h3 class="h3 panel-pane-heading">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque autem delectus
-                            deleniti dignissimos, doloribus.
-                        </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque autem
+                                delectus
+                                deleniti dignissimos, doloribus.
+                            </p>
 
-                        <p>
-                            Exercitationem facilis illum labore maiores maxime necessitatibus nisi officiis qui
-                            quibusdam vitae voluptas, voluptatibus. Architecto eligendi
-                            esse et eum fugit ipsum, laborum maxime neque nisi non omnis, rerum sequi similique.
-                        </p>
+                            <p>
+                                Exercitationem facilis illum labore maiores maxime necessitatibus nisi officiis qui
+                                quibusdam vitae voluptas, voluptatibus. Architecto eligendi
+                                esse et eum fugit ipsum, laborum maxime neque nisi non omnis, rerum sequi similique.
+                            </p>
 
-                        <p>
-                            Libero,
-                            minima, quasi! Eius fugit itaque nostrum qui tenetur vel? Assumenda consectetur culpa
-                            cumque, dolores earum numquam quod vitae voluptatum.
-                        </p>
+                            <p>
+                                Libero,
+                                minima, quasi! Eius fugit itaque nostrum qui tenetur vel? Assumenda consectetur culpa
+                                cumque, dolores earum numquam quod vitae voluptatum.
+                            </p>
 
-                        <p>
-                            Animi assumenda ea ipsum labore numquam officia quidem ratione soluta veniam.
-                        </p>
+                            <p>
+                                Animi assumenda ea ipsum labore numquam officia quidem ratione soluta veniam.
+                            </p>
 
-                        <p>
-                            Ab aliquam autem culpa ex facilis fugiat impedit itaque, libero magni odio officiis
-                            perferendis quae recusandae repellat sed sit tempore
-                            ullam voluptas voluptatem.
-                        </p>
+                            <p>
+                                Ab aliquam autem culpa ex facilis fugiat impedit itaque, libero magni odio officiis
+                                perferendis quae recusandae repellat sed sit tempore
+                                ullam voluptas voluptatem.
+                            </p>
+                        </div><!--/ text-wrap-->
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-lg-6 align-self-end">
                         <div class="img-wrap">
                             <img src="img/bills_module.png" alt="">
                         </div>
@@ -203,28 +220,33 @@
         <section class="section panel-pane bg-grey">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="">Lorem ipsum dolor sit amet.</h3>
+                    <div class="col-lg-6">
+                        <div class="text-wrap">
+                            <h3 class="h3 panel-pane-heading">Lorem ipsum dolor sit amet.</h3>
 
-                        <p>
-                            Distinctio error maiores nostrum. Consectetur cum debitis dolores eaque eius error expedita
-                            explicabo incidunt ipsa iste laborum laudantium minima, nostrum omnis quae quia saepe sequi
-                            vel
-                            velit voluptas?
-                        </p>
+                            <p>
+                                Distinctio error maiores nostrum. Consectetur cum debitis dolores eaque eius error
+                                expedita
+                                explicabo incidunt ipsa iste laborum laudantium minima, nostrum omnis quae quia saepe
+                                sequi
+                                vel
+                                velit voluptas?
+                            </p>
 
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, rerum.</li>
-                            <li>Lorem ipsum dolor sit.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                        </ul>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, rerum.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                            </ul>
 
-                        <a href="#" class="text-primary">Learn more</a>
+                            <a href="#" class="btn btn-success">Learn more</a>
+                        </div><!--/ text-wrap-->
+
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-lg-6 align-self-end">
                         <div class="img-wrap">
                             <img class="" src="img/mint-mobile-login-screen_3.jpg" alt="">
                         </div>
@@ -237,26 +259,45 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-sm-4">
-                        <img src="img/cards/1.jpg" alt="" class="img-fliud">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/cards/1.jpg" alt="" class="img-fliud">
 
-                        <h3 class="h5">Lorem ipsum dolor sit amet, consectetur.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dignissimos distinctio illum
-                            maiores maxime necessitatibus!</p>
+                            <div class="card-content">
+                                <h3 class="h5">Lorem ipsum dolor sit amet, consectetur.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dignissimos
+                                    distinctio
+                                    illum
+                                    maiores maxime necessitatibus!</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-sm-4">
-                        <img src="img/cards/2.jpg" alt="" class="img-fliud">
-                        <h3 class="h5">Lorem ipsum dolor sit, consectetur.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut beatae dolores ducimus quis
-                            sequi.</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/cards/2.jpg" alt="" class="img-fliud">
+
+                            <div class="card-content">
+                                <h3 class="h5">Lorem ipsum dolor sit, consectetur.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut beatae dolores
+                                    ducimus
+                                    quis
+                                    sequi.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-sm-4">
-                        <img src="img/cards/3.jpg" alt="" class="img-fliud">
-                        <h3 class="h5">Lorem ipsum dolor sit amet.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet illum sequi ut veniam
-                            voluptatem! Nesciunt?</p>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/cards/3.jpg" alt="" class="img-fliud">
+
+                            <div class="card-content">
+                                <h3 class="h5">Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet illum sequi ut
+                                    veniam
+                                    voluptatem! Nesciunt?</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div><!-- / row -->
@@ -264,9 +305,13 @@
         </section>
 
         <section class="section bg-green text-center">
+            <div class="section-logo-wrap">
+                <img class="img-fluid" src="img/logo-black.png" alt="">
+            </div>
+
             <div class="container">
-                <div class="row">
-                    <div class="col-10 offset-1">
+                <div class="row justify-content-center">
+                    <div class="col-xs-12 col-sm-10 col-md-8 info-box">
                         <h2 class="h2">Stay Tuned with GSKIP</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur culpa cumque
@@ -276,7 +321,7 @@
                             Facilis, optio sequi?
                         </p>
 
-                        <a href="#" class="btn btn-secondary text-uppercase">Sign up for newsletter</a>
+                        <a href="#" class="btn btn-warning text-uppercase">Sign up for newsletter</a>
                     </div>
 
                 </div><!-- / row -->
@@ -285,8 +330,8 @@
 
         <section class="section text-center">
             <div class="container">
-                <div class="row">
-                    <div class="col-10 offset-1">
+                <div class="row justify-content-center">
+                    <div class="col-xs-12 col-sm-10 col-md-8 info-box">
                         <h2 class="h2">Sign up for GSKIP</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur culpa cumque
@@ -306,20 +351,19 @@
             </div><!-- / container -->
         </section>
 
-        <section class="section bg-green text-center">
+        <section class="section bg-grey text-center">
             <div class="container">
-                <div class="row">
-                    <div class="col-10 offset-1">
+                <div class="row justify-content-center">
+                    <div class="col-xs-12 col-sm-10 col-md-8">
                         <h2 class="h2">Download the App</h2>
 
-                        <a href="#" class="btn"><img src="img/icons/appstore.png" alt=""></a>
-                        <a href="#" class="btn"><img src="img/icons/google_play.png" alt=""></a>
+                        <a href="#" class="btn download-btn"><img src="img/icons/appstore.png" alt=""></a>
+                        <a href="#" class="btn download-btn"><img src="img/icons/google_play.png" alt=""></a>
                     </div>
 
                 </div><!-- / row -->
             </div><!-- / container -->
         </section>
-
     </div><!-- / content -->
 
     <footer class="footer">
@@ -328,19 +372,34 @@
                 <div class="col-12">
                     <div class="footer-logo">
                         <img class="img-fluid" src="img/logo.png" alt="">
-                    </div>    
+                    </div>
                 </div>
-                
+
                 <div class="col-12">
+                    <nav class="social-nav">
+                        <ul class="list-unstyled d-flex justify-content-center">
+                            <li class="social-nav-item"><a href="#" class="social-nav-link"><i class="icon icon-fb"></i></a>
+                            </li>
+                            <li class="social-nav-item"><a href="#" class="social-nav-link"><i
+                                    class="icon icon-twitter"></i></a></li>
+                            <li class="social-nav-item"><a href="#" class="social-nav-link"><i
+                                    class="icon icon-insta"></i></a></li>
+                        </ul>
+                    </nav>
+
                     <p>
-                        &copy; 2017
+                        <a href="tel:+380674445556">+380674445556</a> |
+                        <a href="mailto:ahmed.elbannan@gskip.com">ahmed.elbannan@gskip.com</a> |
+                        Attawapiskat, ON P0L, Canada
+                    </p>
+                    <p>
+                        &copy; 2017 All rights reserved.
                     </p>
                 </div>
             </div>
         </div>
     </footer>
 </div><!-- / wrap -->
-
 
 <!--Scripts-->
 <script src="js/jquery-1.11.3.min.js"></script>

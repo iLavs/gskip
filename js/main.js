@@ -9,6 +9,28 @@ function affix() {
     }
 }
 
+function menuToggle() {
+    var $mainNav = $('#mainNav');
+    var hideMenu = function () {
+        $mainNav.removeClass('active');
+
+        $('body').removeClass('overflow');
+    };
+
+    $('#burgerBtn').click(function (e) {
+        e.preventDefault();
+
+        $('body').addClass('overflow');
+        $mainNav.addClass('active');
+    });
+
+    $('#closeNav').click(function (e) {
+        e.preventDefault();
+
+        hideMenu();
+    });
+}
+
 $(document).ready(function () {
     $('a[href="#"]').click(function (e) {
         e.preventDefault();
@@ -22,4 +44,6 @@ $(document).ready(function () {
         }, 100);
 
     });
+
+    menuToggle();
 });
